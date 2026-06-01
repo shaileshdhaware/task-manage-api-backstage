@@ -7,8 +7,8 @@ metadata:
     - task-management-portal
 spec:
   type: openapi
-  lifecycle: production
-  owner: platform-engineering
+  lifecycle: experimental
+  owner: bsb2-team
   definition: |
     openapi: 3.0.3
     info:
