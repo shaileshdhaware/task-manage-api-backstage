@@ -1,0 +1,44 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: task-list-api
+  description: API for fetching, creating, and deleting task lists
+  tags:
+    - task-management
+spec:
+  type: openapi
+  lifecycle: production
+  owner: platform-engineering
+  definition: |
+    openapi: 3.0.3
+    info:
+      title: Task List API
+      version: 1.0.0
+    paths:
+      /tasks:
+        get:
+          summary: Fetch Task List
+          description: Returns a list of tasks.
+          responses:
+            '200':
+              description: A list of tasks
+              content:
+                application/json:
+                  schema:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Task'
+        post:
+          summary: Create a Task
+          # ...
+    components:
+      schemas:
+        Task:
+          type: object
+          properties:
+            id:
+              type: string
+            title:
+              type: string
+            completed:
+              type: boolean
