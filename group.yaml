@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: bsb2-team
+  description: The newly formed platform team backstage Boys 2
+spec:
+  type: team
+  profile:
+    displayName: Backstage Boys
+    email: dhaware.shailesh@gmail.com
+    # picture: https://example.com/groups/bu-infrastructure.jpeg
+  # parent: ops
+  # children: [backstage, other]
+  members: [shaileshdhaware]
