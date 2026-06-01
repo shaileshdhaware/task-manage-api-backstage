@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: task-management-portal
+  description: This is task management portal for managing tasks
+spec:
+  owner: bsb2-team
+  domain: task
