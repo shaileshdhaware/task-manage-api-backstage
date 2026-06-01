@@ -4,7 +4,7 @@ metadata:
   name: task-list-api
   description: API for fetching, creating, and deleting task lists
   tags:
-    - task-management
+    - task-management-portal
 spec:
   type: openapi
   lifecycle: production
