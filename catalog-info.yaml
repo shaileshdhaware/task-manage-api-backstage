@@ -13,5 +13,5 @@ spec:
   #  - resource:default/artists-db
   # dependencyOf:
   #  - component:default/artist-web-lookup
-  # providesApis:
-  #  - artist-api
+  providesApis:
+    - task-list-api
