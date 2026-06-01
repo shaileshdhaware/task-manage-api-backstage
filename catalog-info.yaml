@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: taskstore-service
+  description: This is service component which expose API to fetch, insert and delete Task
+spec:
+  type: service
+  lifecycle: experimental
+  owner: BSB2-team
+  system: task-management-portal
+  
+  # dependsOn:
+  #  - resource:default/artists-db
+  # dependencyOf:
+  #  - component:default/artist-web-lookup
+  # providesApis:
+  #  - artist-api
