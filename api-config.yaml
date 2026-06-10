@@ -3,6 +3,8 @@ kind: API
 metadata:
   name: task-list-api
   description: API for fetching, creating, and deleting task lists
+  annotations:
+    backstage.io/techdocs-ref: .
   tags:
     - task-management-portal
 spec:
